@@ -35,22 +35,22 @@ ifeq ($(UNAME_S),Linux)
 endif
 
 ifeq ($(ARCH),amd64)
-	BASEIMAGE?=debian:jessie
+	BASEIMAGE?=debian:stretch
 endif
 ifeq ($(ARCH),arm)
-	BASEIMAGE?=armhf/debian:jessie
+	BASEIMAGE?=armhf/debian:stretch
 	QEMUARCH=arm
 endif
 ifeq ($(ARCH),arm64)
-	BASEIMAGE?=aarch64/debian:jessie
+	BASEIMAGE?=aarch64/debian:stretch
 	QEMUARCH=aarch64
 endif
 ifeq ($(ARCH),ppc64le)
-	BASEIMAGE?=ppc64le/debian:jessie
+	BASEIMAGE?=ppc64le/debian:stretch
 	QEMUARCH=ppc64le
 endif
 ifeq ($(ARCH),s390x)
-	BASEIMAGE?=s390x/debian:jessie
+	BASEIMAGE?=s390x/debian:stretch
 	QEMUARCH=s390x
 endif
 
